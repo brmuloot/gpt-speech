@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <head>
+
   <title>Talk to chat GPT</title>
+
   <link
     rel="shortcut icon"
     href="{{ url_for('static', filename='ChatGPT_logo.svg.png') }}"
   />
+
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+
 </head>
 
 <body>
+
   <img src="{{ url_for('static', filename='ChatGPT_logo.svg.png') }}" class="icon" />
   <img src="{{ url_for('static', filename='ChatGPT_logo.svg.png') }}" class="icon_reverse" />
+
   <button id="dark-mode-btn">Dark Mode</button>
 
   <h3>Try to talk with chat GPT !</h3>
+
   <div id="container">
+
     <form id="chat-form" action="/" method="post">
       <input type="submit" value="Talking" id="talk-button"/>
     </form>
@@ -26,6 +34,7 @@
     <form id="chat-form" action="{{ url_for('reset') }}" method="post">
       <input type="submit" value="Reset" id="reset" />
     </form>
+    
   </div>
   
   {% if chat %}
