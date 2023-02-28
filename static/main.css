@@ -1,0 +1,108 @@
+/* Style de base pour la page */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Style Dark mode*/
+#dark-mode-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#dark-mode-btn:hover {
+  background-color: #6a6a6a57;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style pour l'icône */
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.icon_reverse {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  float: right;
+  transform: scaleX(-1);
+}
+
+/* Style pour le titre */
+h3 {
+  margin: 10px;
+}
+
+/* Style pour le formulaire de chat */
+#container {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  margin: 0;
+}
+
+#talk-button, #reset, #stop {
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+  background-color: #75ac9d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#talk-button:hover, #reset:hover {
+  background-color: #75ac9d57;
+}
+
+#stop{
+  background-color: #f35e53;
+}
+
+
+#stop:hover {
+  background-color: #f35e5357;
+}
+
+
+/* Style pour la conversation */
+.conversation {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.question {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.response {
+  background-color: #75ac9d;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+}
